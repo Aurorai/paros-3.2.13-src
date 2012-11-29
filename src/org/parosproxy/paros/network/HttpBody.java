@@ -95,7 +95,7 @@ public class HttpBody {
 		    buf = data.getBytes(getCharset());
 
 		} catch (UnsupportedEncodingException e) {
-		    e.printStackTrace();
+		    System.out.println("Cause: " + e.getCause() + ", Message: " + e.getMessage());
 		}
 		setBody(buf);
         cacheString = null;

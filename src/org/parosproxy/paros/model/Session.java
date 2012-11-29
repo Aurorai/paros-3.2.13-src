@@ -255,9 +255,10 @@ public class Session extends FileXML {
      * @date 2012. 11. 24
      * @param fileName
      */
+    // TODO: 찾기 쉽게 todo 설정함.. ;;;;
 	public void autosave(final String fileName) {
 		final Log log = LogFactory.getLog(Session.class);
-		final int savePeriod = 60 * 1000;	// 1 minute
+		final int savePeriod = 30 * 1000;	// 30 second
 		Thread t = new Thread( new Runnable() {
 			
 			@Override
